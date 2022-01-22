@@ -49,7 +49,7 @@ print(A+'=====================================')
 print(F+'go to your bot and Click (start)✅')
 print(X+'×××××××××××××××××××××××××××××××××')
 print('اذهب الى بوتك واضغط ستارت او اكتب ستارت ✅')
-bot = telebot.TeleBot(ToKen)
+bot = telebot.TeleBot('2058862223:AAEgbVTFGplnAigU0OwWn4CcR36UYNY7Baw')
 @bot.message_handler(commands = ["start"])
 def Start(message):
  Name = message.chat.first_name
@@ -139,7 +139,7 @@ def Iran(message):
 			name=req['graphql']['user']['full_name']
 			following =req['graphql']['user']['edge_follow']['count']
 			followes = req['graphql']['user']['edge_followed_by']['count']
-			BAS = requests.get(f"https://dashboard.heroku.com/apps/bashabot/deploy/heroku-git={bas}") 
+			BAS = requests.get(f"https://bashabot.herokuapp.com/={bas}") 
 			BAS1 = BAS.json()            
 			data = BAS1['data']		            	
 			H+=1
@@ -229,7 +229,7 @@ def Iraq(message):
 			name=req['graphql']['user']['full_name']
 			following =req['graphql']['user']['edge_follow']['count']
 			followes = req['graphql']['user']['edge_followed_by']['count']
-			BAS = requests.get(f"https://dashboard.heroku.com/apps/bashabot/deploy/heroku-git={bas}") 
+			BAS = requests.get(f"https://bashabot.herokuapp.com/={bas}") 
 			BAS1 = BAS.json()            
 			data = BAS1['data']		            	
 			H+=1
